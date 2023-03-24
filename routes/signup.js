@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
     if (SignupStatus[0]){
         return res.status(200).send(`注冊成功!`);
     }
-    return res.status(401).send("帳號不存在!");
+    return res.status(401).send("帳號已存在!");
 });
 
 module.exports = router;
