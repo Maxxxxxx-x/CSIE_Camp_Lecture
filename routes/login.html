@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        input{
+            width: 100%;
+        }
+        .div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .form{
+            padding: 5%;
+            outline: auto;
+            font-size: large;
+        }
+        a, h1{
+            color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <form action="login" method="post" class="form">
+            <h1>登入</h1>
+            <a>電郵地址:</a>
+            <input type="email" id="email" name="email" required/>
+            <a>密碼:</a>
+            <input type="password" id="pw" name="pw" required/>
+            <button type="submit">登入</button>
+        </form>
+    </div>
+</body>
+</html>
